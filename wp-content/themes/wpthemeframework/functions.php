@@ -3,25 +3,12 @@
 if( function_exists('acf_set_options_page_menu') ){
     acf_add_options_sub_page( __('Theme Options') );
     acf_set_options_page_title( __('Theme Options') );
-  //  acf_add_options_sub_page( 'Emergency / Breaking News' );
-  //  acf_add_options_sub_page( 'Guided Search' );
 }
 
 get_template_part( 'includes/scripts' );
 get_template_part( 'includes/navigation' );
 get_template_part( 'includes/news' );
 get_template_part( 'includes/modules/main' );
-
-//for AquaGrade
-get_template_part( 'includes/AquaGrade/aquagrade' );
-get_template_part( 'includes/AquaGrade/bottles' );
-get_template_part( 'includes/AquaGrade/places' );
-get_template_part( 'includes/AquaGrade/tests' );
-get_template_part( 'includes/AquaGrade/post-types' );
-
-//get_template_part( 'includes/AquaGrade/import' );
-
-//end for AquaGrade
 
 add_theme_support( 'post-thumbnails' );
 
