@@ -1,0 +1,31 @@
+.blog .video-container, .single-post .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px; 
+    background-color:#ebebeb;
+    cursor: pointer;
+}
+ 
+.blog .video-container iframe, .blog .video-container object, .blog .video-container img, .blog .video-container embed,
+.single-post .video-container iframe, .single-post .video-container object, .single-post .video-container img, .single-post .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.blog img.vimeo-button, .blog img.youtube-button, .single-post img.vimeo-button, .single-post img.youtube-button {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 45px;
+	width: 75px;
+}
