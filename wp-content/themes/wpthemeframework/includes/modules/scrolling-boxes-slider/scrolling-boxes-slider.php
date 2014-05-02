@@ -4,13 +4,27 @@ define('SCROLLING_BOXES_SLIDER_DIR', get_template_directory_uri() . '/includes/m
 
 //add_image_size( 'scrolling-boxes-slider', ___, ___, true );
 
+
+
 function scrolling_boxes_slider() {
     scrolling_boxes_slider_scripts();
     
     ?>
     
     <section id="scrolling-boxes-slider">
-
+        <?php $sliderImages = get_field("scrolling_boxes_images");
+            
+            foreach($sliderImages as $image) {
+                
+                //this is an exmaple to get correct image size
+                //replace "large" with "scrolling-boxes-slider" after you use the correct sizes on line 5
+                
+                echo $image['image']['sizes']['large'];
+                
+                echo "<hr>";
+            }
+            
+         ?>
     </section>
     <?php
 }
