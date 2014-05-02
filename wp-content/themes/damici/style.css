@@ -17,12 +17,25 @@ body {
 
 header .menu-container {
     box-shadow: 0 0 0;
+    
+}
+
+header .menu-container ul {
+    padding: 0;
+    text-align: justify;
 }
 
 header .menu-container ul li, header .menu-container ul li:hover {
-    border-top: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: block;
+    float: left;
     width: 20%;
 }
+
+header .menu-container ul li
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),

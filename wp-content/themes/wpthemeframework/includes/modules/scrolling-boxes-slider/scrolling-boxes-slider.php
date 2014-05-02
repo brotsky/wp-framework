@@ -4,7 +4,7 @@ define('SCROLLING_BOXES_SLIDER_DIR', get_template_directory_uri() . '/includes/m
 
 //add_image_size( 'scrolling-boxes-slider', ___, ___, true );
 
-function gallery_grid() {
+function scrolling_boxes_slider() {
     scrolling_boxes_slider_scripts();
     
     ?>
