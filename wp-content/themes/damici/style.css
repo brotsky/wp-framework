@@ -10,3 +10,30 @@
 */
 
 @import url("../wpthemeframework/style.css");
+
+body {
+    background: url(images/white_wall_hash.png);
+}
+
+header .menu-container {
+    box-shadow: 0 0 0;
+}
+
+header .menu-container ul li, header .menu-container ul li:hover {
+    border-top: 0;
+    width: 20%;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+    body {
+        background: url(images/white_wall_hash_@2X.png);
+    }
+
+}
