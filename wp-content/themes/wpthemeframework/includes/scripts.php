@@ -2,8 +2,8 @@
 
 function init_scripts() {
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css' );
-	//wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
-	wp_enqueue_style( 'bootstrap', '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css' );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
+	//wp_enqueue_style( 'bootstrap', '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css' );
 	//wp_enqueue_style( 'bootstrap-responsive', get_template_directory_uri() . '/css/bootstrap-responsive.min.css' );
 	wp_enqueue_style( 'jquery-ui', '//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css' );
 	
