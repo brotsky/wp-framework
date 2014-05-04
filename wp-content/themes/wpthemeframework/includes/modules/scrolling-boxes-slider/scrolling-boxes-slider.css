@@ -8,6 +8,8 @@
 #scrolling-boxes-slider .image-row {
     width: 2000%;
     position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #scrolling-boxes-slider .image-row.two {
@@ -17,10 +19,10 @@
 #scrolling-boxes-slider .image {
     width: 290px;
     height: 220px;
-    display: inline-block;
     margin-right: 20px;
     position: relative;
     left: -290px;
+    float: left;
 }
 
 #scrolling-boxes-slider .image img {
