@@ -27,20 +27,26 @@ function scrolling_boxes_slider() {
                 $count++;
             }
             ?>
-            <div class="slider-container">
-                <div class="row one">
-                <?php foreach($top_row as $i) { ?>
-                    <div class="image">
-                        <img src="<?php echo $i['image']['sizes']['large']; ?>" alt="<?php echo $i['title']; ?>" />
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="slider-container">
+                            <div class="image-row one">
+                            <?php foreach($top_row as $i) { ?>
+                                <div class="image">
+                                    <img src="<?php echo $i['image']['sizes']['large']; ?>" alt="<?php echo $i['title']; ?>" />
+                                </div>
+                            <?php } ?>
+                            </div>
+                            <div class="image-row two">
+                            <?php foreach($bottom_row as $i) { ?>
+                                <div class="image">
+                                    <img src="<?php echo $i['image']['sizes']['large']; ?>" alt="<?php echo $i['title']; ?>" />
+                                </div>
+                            <?php } ?>
+                            </div>
+                        </div>
                     </div>
-                <?php } ?>
-                </div>
-                <div class="row two">
-                <?php foreach($bottom_row as $i) { ?>
-                    <div class="image">
-                        <img src="<?php echo $i['image']['sizes']['large']; ?>" alt="<?php echo $i['title']; ?>" />
-                    </div>
-                <?php } ?>
                 </div>
             </div>
             <?php
