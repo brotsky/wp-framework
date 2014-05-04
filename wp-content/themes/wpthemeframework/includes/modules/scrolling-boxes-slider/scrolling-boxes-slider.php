@@ -14,16 +14,36 @@ function scrolling_boxes_slider() {
     <section id="scrolling-boxes-slider">
         <?php $sliderImages = get_field("scrolling_boxes_images");
             
-            foreach($sliderImages as $image) {
-                
-                //this is an exmaple to get correct image size
-                //replace "large" with "scrolling-boxes-slider" after you use the correct sizes on line 5
-                
-                echo $image['image']['sizes']['large'];
-                
-                echo "<hr>";
-            }
+            $top_row = array();
+            $bottom_row = array();
             
+            $count = 0;
+            foreach($sliderImages as $slide) {
+                if($count % 2 == 0)
+                    array_push($top_row, $slide);
+                else
+                    array_push($bottom_row, $slide);
+                    
+                $count++;
+            }
+            ?>
+            <div class="slider-container">
+                <div class="row one">
+                <?php foreach($top_row as $i) { ?>
+                    <div class="image">
+                        <img src="<?php echo $i['image']['sizes']['large']; ?>" alt="<?php echo $i['title']; ?>" />
+                    </div>
+                <?php } ?>
+                </div>
+                <div class="row two">
+                <?php foreach($bottom_row as $i) { ?>
+                    <div class="image">
+                        <img src="<?php echo $i['image']['sizes']['large']; ?>" alt="<?php echo $i['title']; ?>" />
+                    </div>
+                <?php } ?>
+                </div>
+            </div>
+            <?php
          ?>
     </section>
     <?php

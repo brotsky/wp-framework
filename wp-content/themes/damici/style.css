@@ -11,6 +11,16 @@
 
 @import url("../wpthemeframework/style.css");
 
+@font-face {
+	font-family: 'TrendSansFour';
+	src: url('fonts/TrendSansFour.eot?') format('eot'), 
+	     url('fonts/TrendSansFour.otf')  format('opentype'),
+	     url('fonts/TrendSansFour.woff') format('woff'), 
+	     url('fonts/TrendSansFour.ttf')  format('truetype'),
+	     url('fonts/TrendSansFour.svg#TrendSansFour') format('svg');
+}
+
+
 body {
     background: url(images/white_wall_hash.png);
 }
@@ -33,9 +43,17 @@ header .menu-container ul li, header .menu-container ul li:hover {
     display: block;
     float: left;
     width: 20%;
+    font-family: 'TrendSansFour';
+    color: #000;
+    font-weight: normal;
 }
 
-header .menu-container ul li
+header .menu-container ul li a {
+    color: #000;
+}
+header .menu-container ul li a:hover {
+    color: #b82f27;
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
