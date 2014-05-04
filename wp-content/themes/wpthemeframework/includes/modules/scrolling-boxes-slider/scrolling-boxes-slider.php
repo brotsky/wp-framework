@@ -2,7 +2,7 @@
 
 define('SCROLLING_BOXES_SLIDER_DIR', get_template_directory_uri() . '/includes/modules/scrolling-boxes-slider');
 
-//add_image_size( 'scrolling-boxes-slider', ___, ___, true );
+add_image_size( 'scrolling-boxes-slider', 580, 440, true );
 
 
 
@@ -34,14 +34,14 @@ function scrolling_boxes_slider() {
                             <div class="image-row one">
                             <?php foreach($top_row as $i) { ?>
                                 <div class="image">
-                                    <img src="<?php echo $i['image']['sizes']['large']; ?>" alt="<?php echo $i['title']; ?>" />
+                                    <img src="<?php echo $i['image']['sizes']['scrolling-boxes-slider']; ?>" alt="<?php echo $i['title']; ?>" />
                                 </div>
                             <?php } ?>
                             </div>
                             <div class="image-row two">
                             <?php foreach($bottom_row as $i) { ?>
                                 <div class="image">
-                                    <img src="<?php echo $i['image']['sizes']['large']; ?>" alt="<?php echo $i['title']; ?>" />
+                                    <img src="<?php echo $i['image']['sizes']['scrolling-boxes-slider']; ?>" alt="<?php echo $i['title']; ?>" />
                                 </div>
                             <?php } ?>
                             </div>

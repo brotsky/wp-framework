@@ -33,20 +33,29 @@ header .menu-container {
 header .menu-container ul {
     padding: 0;
     text-align: justify;
+    list-style-type: none;
 }
 
 header .menu-container ul li, header .menu-container ul li:hover {
     border: 0;
     padding: 0;
     margin: 0;
-    text-align: center;
-    display: block;
+    text-align: left;
+    display: inline-block;
     float: left;
-    width: 20%;
     font-family: 'TrendSansFour';
     -webkit-font-smoothing: antialiased;
     color: #000;
     font-weight: normal;
+	width: 20%;
+    
+}
+
+*+html .menu-container li {display: inline;}
+* html .menu-container li {display: inline;}
+
+header .menu-container ul li.last-menu-item {
+    text-align: right;
 }
 
 header .menu-container ul li a {
