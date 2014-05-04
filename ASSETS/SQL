@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 04, 2014 at 11:51 PM
+-- Generation Time: May 05, 2014 at 01:27 AM
 -- Server version: 5.5.33
 -- PHP Version: 5.5.3
 
@@ -1564,7 +1564,7 @@ CREATE TABLE `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=32 ;
 
 --
 -- Dumping data for table `wp_usermeta`
@@ -1589,7 +1589,19 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (16, 1, 'wp_user-settings-time', '1398919270'),
 (17, 1, 'managenav-menuscolumnshidden', 'a:4:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";}'),
 (18, 1, 'metaboxhidden_nav-menus', 'a:6:{i:0;s:8:"add-post";i:1;s:11:"add-product";i:2;s:12:"add-post_tag";i:3;s:15:"add-post_format";i:4;s:15:"add-product_cat";i:5;s:15:"add-product_tag";}'),
-(19, 1, 'nav_menu_recently_edited', '14');
+(19, 1, 'nav_menu_recently_edited', '14'),
+(20, 2, 'first_name', ''),
+(21, 2, 'last_name', ''),
+(22, 2, 'nickname', 'root'),
+(23, 2, 'description', ''),
+(24, 2, 'rich_editing', 'true'),
+(25, 2, 'comment_shortcuts', 'false'),
+(26, 2, 'admin_color', 'fresh'),
+(27, 2, 'use_ssl', '0'),
+(28, 2, 'show_admin_bar_front', 'true'),
+(29, 2, 'wp_capabilities', 'a:1:{s:13:"administrator";b:1;}'),
+(30, 2, 'wp_user_level', '10'),
+(31, 2, 'dismissed_wp_pointers', 'wp350_media,wp360_revisions,wp360_locks,wp390_widgets');
 
 -- --------------------------------------------------------
 
@@ -1611,14 +1623,15 @@ CREATE TABLE `wp_users` (
   PRIMARY KEY (`ID`),
   KEY `user_login_key` (`user_login`),
   KEY `user_nicename` (`user_nicename`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `wp_users`
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
-(1, 'brotsky', '$P$BjGvEfDmGMGbI2Mkycmzzk4d4cMrEG/', 'brotsky', 'dev@brotskydesigns.com', '', '2014-05-01 01:40:26', '', 0, 'brotsky');
+(1, 'brotsky', '$P$BjGvEfDmGMGbI2Mkycmzzk4d4cMrEG/', 'brotsky', 'dev@brotskydesigns.com', '', '2014-05-01 01:40:26', '', 0, 'brotsky'),
+(2, 'root', '$P$BIPYFZ4joxXF37kShJJT/3aI3x/hKz1', 'root', 'root@root.com', '', '2014-05-04 23:26:36', '', 0, 'root');
 
 -- --------------------------------------------------------
 
