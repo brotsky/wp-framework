@@ -17,15 +17,12 @@ function scrolling_boxes_slider() {
             $top_row = array();
             $bottom_row = array();
             
-            $count = 0;
-            foreach($sliderImages as $slide) {
-                if($count % 2 == 0)
+            foreach($sliderImages as $k => $slide) {
+                if($k % 2 == 0)
                     array_push($top_row, $slide);
                 else
                     array_push($bottom_row, $slide);
-                    
-                $count++;
-            }
+                }
             ?>
             <div class="container">
                 <div class="row">

@@ -6,7 +6,7 @@ function imgScroll1(){
     row1 = $("#scrolling-boxes-slider .image-row.one");
     last1 = $("#scrolling-boxes-slider .image-row.one .image").last();
     row1.css("left",0);
-    row1.animate({left:"+=310"},12000,'linear',function(){
+    row1.animate({left:"+=310"},24000,'linear',function(){
         
         row1.css("left",0);
         
@@ -20,7 +20,7 @@ function imgScroll2(){
     row2 = $("#scrolling-boxes-slider .image-row.two");
     last2 = $("#scrolling-boxes-slider .image-row.two .image").last();    
     row2.css("left",-155);
-    row2.animate({left:"+=310"},12000,'linear',function(){
+    row2.animate({left:"+=310"},24000,'linear',function(){
         
         row2.css("left",-155);
         
