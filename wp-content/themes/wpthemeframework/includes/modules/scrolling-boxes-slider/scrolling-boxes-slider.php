@@ -24,10 +24,10 @@ function scrolling_boxes_slider() {
                     array_push($bottom_row, $slide);
             }
             
-            //switch first and last of bottom row so the order is correct on the frontend
+            //move first item of 2nd row to the end for frontend purposes
             $temp = $bottom_row[0];
-            $bottom_row[0] = $bottom_row[sizeof($bottom_row) - 1];
-            $bottom_row[sizeof($bottom_row) - 1] = $temp;
+            array_shift($bottom_row);
+            array_push($bottom_row, $temp);
             
             ?>
             <div class="container">
