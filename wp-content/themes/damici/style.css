@@ -61,19 +61,19 @@ header .myNavButton{
 
 }
 header .rolling-pin{
-    background-image: url(images/rolling-pin-sprite@2X.png);
-    background-size: 413px 132px;
-    background-position: 0 66px;
-    margin-top:-66px;
-    margin-left: -205px;    
-    width: 413px;
-    height: 66px;
+    background: url(images/rolling-pin-sprite.png);
+    background-size: 207px 66px;
+    background-position: 0 33px;
+    margin: -33px 0 0 -103.5px;
+    width: 207px;
+    height: 33px;
     position: absolute;
     left: 50%;
+    top: 0;
 }
 
 header .rolling-pin:hover{
-    background-position: 0 0px;
+    background-position: 0 0;
 }
 
 
@@ -87,20 +87,17 @@ header .logo-links ul li a:hover {
     background-position:100% 115%;
 }
 
-header .menu-container,
-header .logo-links a {
+header .menu-container, header .logo-links a {
     box-shadow: 0 0 0;
     
 }
-header .menu-container ul ,
-header .logo-links ul{
+header .menu-container ul, header .logo-links ul{
     padding: 0;
     text-align: justify;
     list-style-type: none;
 }
 
-header .menu-container ul li, header .menu-container ul li:hover,
-header .logo-links ul li, header .logo-links ul li:hover {
+header .menu-container ul li, header .menu-container ul li:hover, header .logo-links ul li, header .logo-links ul li:hover {
     border: 0;
     padding: 0;
     margin: 0;
@@ -180,6 +177,14 @@ only screen and (                min-resolution: 2dppx) {
 
     body {
         background: url(images/white_wall_hash_@2X.png);
+    }
+    header .rolling-pin {
+        background: url(images/rolling-pin-sprite@2x.png);
+        background-size: 207px 66px;
+        background-position: 0 33px;
+    }
+    header .rolling-pin:hover{
+        background-position: 0 0;
     }
 
 }
