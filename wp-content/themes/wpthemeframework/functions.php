@@ -47,6 +47,22 @@ function widgets_init() {
 }
 add_action( 'widgets_init', 'widgets_init' );
 
+function get_social_links() {
+    $social_links = get_field("social_links","options");
+        if(sizeof($social_links) > 0) {
+    ?>
+    <ul>
+        <?php foreach($social_links as $s) { ?>
+        <li>
+            <a href="<?php echo $s['url']; ?>">
+            <i class="fa <?php echo $s['fontawesome_class_name'] ?>"></i>
+            </a>
+        </li>
+        <?php } ?>
+    </ul>
+    <?php }
+}
+
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (

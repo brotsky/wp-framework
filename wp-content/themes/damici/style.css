@@ -20,10 +20,27 @@
 	     url('fonts/TrendSansFour.svg#TrendSansFour') format('svg');
 }
 
+@font-face {
+	font-family: 'Lovelo_Black';
+	src: url('fonts/Lovelo_Black.eot?') format('eot'), 
+	     url('fonts/Lovelo_Black.otf')  format('opentype'),
+	     url('fonts/Lovelo_Black.woff') format('woff'), 
+	     url('fonts/Lovelo_Black.ttf')  format('truetype'),
+	     url('fonts/Lovelo_Black.svg#Lovelo_Black') format('svg');
+}
 
 body {
     background: url(images/white_wall_hash.png);
 }
+
+header .top-header {
+    height: auto;
+}
+
+header #logo {
+    width: 100%;
+}
+
 
 header .menu-container {
     box-shadow: 0 0 0;
@@ -63,6 +80,34 @@ header .menu-container ul li a {
 }
 header .menu-container ul li a:hover {
     color: #b82f27;
+}
+
+footer {
+    position: relative;
+    color: #fff;
+    background: none;
+    overflow: hidden;
+    font-family: 'Lovelo_Black';
+}
+
+footer a i {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+footer a:hover i {
+    color: #000;
+}
+
+footer .diagonal-red {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1000px;
+}
+
+footer #footer-pig {
+    width: 100%;
 }
 
 @media

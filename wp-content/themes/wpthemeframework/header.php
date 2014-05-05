@@ -30,19 +30,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 col-sm-9 hidden-xs">
-                        <?php $social_links = get_field("social_links","options");
-                            if(sizeof($social_links) > 0) {
-                        ?>
-                        <ul>
-                            <?php foreach($social_links as $s) { ?>
-                            <li>
-                                <a href="<?php echo $s['url']; ?>">
-                                <i class="fa <?php echo $s['fontawesome_class_name'] ?>"></i>
-                                </a>
-                            </li>
-                            <?php } ?>
-                        </ul>
-                        <?php } ?>
+                        <?php get_social_links(); ?>
                     </div>
                     <?php if(get_field("use_store","options")) { ?>
                     <div id="shopping-cart" class="col-md-3 col-sm-3 col-xs-12 text-right">
