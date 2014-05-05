@@ -20,6 +20,16 @@
 	     url('fonts/TrendSansFour.svg#TrendSansFour') format('svg');
 }
 
+.myRow {
+    display: table;
+}
+
+.myRow [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+
 @font-face {
 	font-family: 'Lovelo_Black';
 	src: url('fonts/Lovelo_Black.eot?') format('eot'), 
@@ -39,21 +49,29 @@ header .top-header {
 
 header #logo {
     width: 100%;
+    min-width: 249px;
+    min-height: 83px;
 }
 
+header .logo-links ul li {
+    margin-top:35px;
+}
 
-header .menu-container {
+header .menu-container,
+header .logo-links a h1 {
     box-shadow: 0 0 0;
     
 }
 
-header .menu-container ul {
+header .menu-container ul ,
+header .logo-links ul{
     padding: 0;
     text-align: justify;
     list-style-type: none;
 }
 
-header .menu-container ul li, header .menu-container ul li:hover {
+header .menu-container ul li, header .menu-container ul li:hover,
+header .logo-links ul li h1, header .logo-links ul li h1:hover {
     border: 0;
     padding: 0;
     margin: 0;
@@ -75,10 +93,12 @@ header .menu-container ul li.last-menu-item {
     text-align: right;
 }
 
-header .menu-container ul li a {
+header .menu-container ul li a,
+header .logo-links ul li a{
     color: #000;
 }
-header .menu-container ul li a:hover {
+header .menu-container ul li a:hover,
+header .logo-links ul li a h1:hover {
     color: #b82f27;
 }
 

@@ -47,7 +47,7 @@
         <div class="menu-container">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6 hidden-xs">
+                    <div class="col-md-3 col-sm-6 hidden-xs logo-links">
                     <a href="<?php echo site_url(); ?>">
                         <img id="logo" src="<?php the_field("logo","options"); ?>" />
                     </a>
@@ -63,8 +63,8 @@
                     </div>
 
                     <!-- menu in small and extra small view - hidden in large and view view -->
-                    <div class="col-sm-6 col-xs-6 hidden-lg hidden-md">
-                        <div class="btn-group pull-right">
+                    <div class="col-sm-6 col-xs-6 hidden-lg hidden-md logo-links">
+                        <div class="btn-group pull-left">
                             <button type="button" style="height:auto;width:auto;"class="btn btn-lg dropdown-toggle" data-toggle="dropdown">
                                 <i class="fa fa-cog fa-2x"></i>
                             </button>

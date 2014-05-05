@@ -28,21 +28,79 @@
     <header>
         <div class="top-header">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
+                <div class="myRow row hidden-sm hidden-xs ">
+                    <div class='col-lg-3 col-md-3 logo-links' style="vertical-align:middle;">
+                        <ul>
+                            <li class='pull-right'>
+                                <a href="#"><h1>Dine</h1></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
                         <a href="<?php echo site_url(); ?>">
                             <img id="logo" src="<?php the_field("logo","options"); ?>" />
                         </a>
+                    </div>
+                    <div class='col-lg-3 col-md-3 logo-links' style="vertical-align:middle;">
+                        <ul>
+                            <li class="pull-left" >
+                                <a href="#"><h1>Stay</h1></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='row hidden-lg hidden-md'>
+                    <div class="col-sm-12 col-xs-12"  style="margin-bottom:10px;">
+                        <a href="<?php echo site_url(); ?>">
+                            <img id="logo" src="<?php the_field("logo","options"); ?>" />
+                        </a>
+                    </div>
+                    <div class='col-sm-6 col-xs-6 logo-links'>
+                        <ul>
+                            <li class="pull-left">
+                                <a href="#"><h1>Dine</h2></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='col-sm-6 col-xs-6 logo-links'>
+                        <ul>
+                            <li class="pull-right">
+                                <a href="#"><h1>Stay</h2></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="menu-container">
             <div class="container">
-                <div class="row">
+                <div class="row hidden-sm hidden-xs">
                     <!-- menu in large and medium view - hidden in small and extra small view -->
                     <div class="col-md-12">
                         <?wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => '' ) );?>
+                    </div>
+                </div>
+                <div class='row hidden-lg hidden-md'>
+                                        <!-- menu in small and extra small view - hidden in large and view view -->
+                    <div class="col-sm-12 col-xs-12 hidden-lg hidden-md text-center">
+                        <div class="btn-group">
+                            <button type="button" style="height:auto;width:auto;"class="btn btn-lg dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-cog fa-2x"></i>
+                            </button>
+                            <ul class="dropdown-menu " role="menu">
+                            <?
+                            $menu_name = 'header-menu'; // Get the nav menu based on $menu_name (same as 'theme_location' or 'menu' arg to wp_nav_menu)
+    
+                            if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
+                                $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+    
+                                $menu_items = wp_get_nav_menu_items($menu->term_id);
+                                foreach ( (array) $menu_items as $key => $menu_item ) {?>
+                                    <li style="width:100% !important;"><a href="<?=$menu_item->url?>"><?=$menu_item->title?></a></li>
+                                <?}
+                            }?>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
