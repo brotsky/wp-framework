@@ -96,7 +96,7 @@
     
                                 $menu_items = wp_get_nav_menu_items($menu->term_id);
                                 foreach ( (array) $menu_items as $key => $menu_item ) {?>
-                                    <li style="width:100% !important;"><a href="<?=$menu_item->url?>"><?=$menu_item->title?></a></li>
+                                    <li style="width:100% !important;"><a class='text-center' href="<?=$menu_item->url?>"><?=$menu_item->title?></a></li>
                                 <?}
                             }?>
                             </ul>
