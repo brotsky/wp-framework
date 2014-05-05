@@ -52,27 +52,27 @@ header #logo {
     min-width: 249px;
     min-height: 83px;
 }
-
-header .rolling-pin{
-    background-image: url(images/rolling-pin-sprite.png);
-    background-size: 446px 33px;
-    margin-top:-25px;
-    margin-left: -115px;    
-    width: 223px;
-    height: 33px;
-    position: absolute;
-    left: 50%;
-}
-
 header .myNavButton{
-    margin-top:20px;
+    margin-top:60px;
     background:none;
     border:none;
     height:100%;
     width:226px;
 }
+header .rolling-pin{
+    background-image: url(images/rolling-pin-sprite@2X.png);
+    background-size: 413px 132px;
+    background-position: 0 66px;
+    margin-top:-66px;
+    margin-left: -215px;    
+    width: 413px;
+    height: 66px;
+    position: absolute;
+    left: 50%;
+}
+
 header .rolling-pin:hover{
-    background-position: 223px 0;
+    background-position: 0 0px;
 }
 
 

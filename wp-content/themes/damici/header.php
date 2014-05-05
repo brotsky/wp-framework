@@ -31,7 +31,7 @@
                 <div class="myRow row hidden-sm hidden-xs ">
                     <div class='col-lg-3 col-md-3 logo-links' style="vertical-align:middle;">
                         <ul>
-                            <li class='pull-right' style="margin-right:56px;">
+                            <li class='pull-right' style="margin-right:66px;">
                                 <a href="#">Dine</a>
                             </li>
                         </ul>
