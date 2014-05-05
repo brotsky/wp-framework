@@ -25,9 +25,8 @@ function scrolling_boxes_slider() {
             }
             
             //move first item of 2nd row to the end for frontend purposes
-            $temp = $bottom_row[0];
-            array_shift($bottom_row);
-            array_push($bottom_row, $temp);
+            
+            array_unshift($bottom_row, array_pop($bottom_row));
             
             ?>
             <div class="container">
