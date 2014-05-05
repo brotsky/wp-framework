@@ -53,16 +53,30 @@ header #logo {
     min-height: 83px;
 }
 
+header .rolling-pin{
+    background-image: url(images/rolling-pin-sprite.png);
+    background-size: 446px 33px;
+    margin-top:-25px;
+    margin-left: -115px;    
+    width: 223px;
+    height: 33px;
+    position: absolute;
+    left: 50%;
+}
+
+header .rolling-pin:hover{
+    background-position: 223px 0;
+}
+
+
 header .logo-links ul li {
     margin-top:35px;
 }
-
 header .menu-container,
-header .logo-links a h1 {
+header .logo-links a {
     box-shadow: 0 0 0;
     
 }
-
 header .menu-container ul ,
 header .logo-links ul{
     padding: 0;
@@ -71,7 +85,7 @@ header .logo-links ul{
 }
 
 header .menu-container ul li, header .menu-container ul li:hover,
-header .logo-links ul li h1, header .logo-links ul li h1:hover {
+header .logo-links ul li, header .logo-links ul li:hover {
     border: 0;
     padding: 0;
     margin: 0;
@@ -92,13 +106,16 @@ header .logo-links ul li h1, header .logo-links ul li h1:hover {
 header .menu-container ul li.last-menu-item {
     text-align: right;
 }
+header .logo-links {
+    font-size: 36px;
+}
 
 header .menu-container ul li a,
 header .logo-links ul li a{
     color: #000;
 }
 header .menu-container ul li a:hover,
-header .logo-links ul li a h1:hover {
+header .logo-links ul li a:hover {
     color: #b82f27;
 }
 

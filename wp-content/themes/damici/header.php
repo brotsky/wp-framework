@@ -31,8 +31,8 @@
                 <div class="myRow row hidden-sm hidden-xs ">
                     <div class='col-lg-3 col-md-3 logo-links' style="vertical-align:middle;">
                         <ul>
-                            <li class='pull-right'>
-                                <a href="#"><h1>Dine</h1></a>
+                            <li class='pull-right' style="margin-right:56px;">
+                                <a href="#">Dine</a>
                             </li>
                         </ul>
                     </div>
@@ -44,7 +44,7 @@
                     <div class='col-lg-3 col-md-3 logo-links' style="vertical-align:middle;">
                         <ul>
                             <li class="pull-left" >
-                                <a href="#"><h1>Stay</h1></a>
+                                <a href="#">Stay</a>
                             </li>
                         </ul>
                     </div>
@@ -58,14 +58,14 @@
                     <div class='col-sm-6 col-xs-6 logo-links'>
                         <ul>
                             <li class="pull-left">
-                                <a href="#"><h1>Dine</h2></a>
+                                <a href="#">Dine</a>
                             </li>
                         </ul>
                     </div>
                     <div class='col-sm-6 col-xs-6 logo-links'>
                         <ul>
-                            <li class="pull-right">
-                                <a href="#"><h1>Stay</h2></a>
+                            <li class="pull-right" style="margin-right:76px;">
+                                <a href="#">Stay</a>
                             </li>
                         </ul>
                     </div>
@@ -84,8 +84,8 @@
                                         <!-- menu in small and extra small view - hidden in large and view view -->
                     <div class="col-sm-12 col-xs-12 hidden-lg hidden-md text-center">
                         <div class="btn-group">
-                            <button type="button" style="background:none;border:none;box-shadow:none;height:auto;width:auto;"class="btn btn-lg dropdown-toggle" data-toggle="dropdown">
-                                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/rolling-pin.png"><!-- <i class="fa fa-cog fa-2x"></i> -->
+                            <button type="button" style="margin-top:20px;background:none;border:none;height:100%;width:226px;"class="btn btn-lg dropdown-toggle" data-toggle="dropdown">
+                                <a href="#" class='rolling-pin'></a><!-- <i class="fa fa-cog fa-2x"></i> -->
                             </button>
                             <ul class="dropdown-menu" role="menu">
                             <?
