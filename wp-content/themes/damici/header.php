@@ -84,10 +84,10 @@
                                         <!-- menu in small and extra small view - hidden in large and view view -->
                     <div class="col-sm-12 col-xs-12 hidden-lg hidden-md text-center">
                         <div class="btn-group">
-                            <button type="button" style="height:auto;width:auto;"class="btn btn-lg dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-cog fa-2x"></i>
+                            <button type="button" style="background:none;border:none;box-shadow:none;height:auto;width:auto;"class="btn btn-lg dropdown-toggle" data-toggle="dropdown">
+                                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/rolling-pin.png"><!-- <i class="fa fa-cog fa-2x"></i> -->
                             </button>
-                            <ul class="dropdown-menu " role="menu">
+                            <ul class="dropdown-menu" role="menu">
                             <?
                             $menu_name = 'header-menu'; // Get the nav menu based on $menu_name (same as 'theme_location' or 'menu' arg to wp_nav_menu)
     
