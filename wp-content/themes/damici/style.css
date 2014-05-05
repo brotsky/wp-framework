@@ -53,18 +53,19 @@ header #logo {
     min-height: 83px;
 }
 header .myNavButton{
-    margin-top:60px;
+    margin-top:70px;
     background:none;
     border:none;
     height:100%;
     width:226px;
+
 }
 header .rolling-pin{
     background-image: url(images/rolling-pin-sprite@2X.png);
     background-size: 413px 132px;
     background-position: 0 66px;
     margin-top:-66px;
-    margin-left: -215px;    
+    margin-left: -205px;    
     width: 413px;
     height: 66px;
     position: absolute;
