@@ -90,6 +90,14 @@ footer {
     font-family: 'Lovelo_Black';
 }
 
+footer a {
+    color: #aaa;
+}
+
+footer a:hover {
+    color: #999;
+}
+
 footer a i {
     color: #fff;
     font-size: 2.5em;
@@ -107,7 +115,7 @@ footer .diagonal-red {
 }
 
 footer #footer-pig {
-    width: 100%;
+    width: 80%;
 }
 
 @media
