@@ -33,19 +33,19 @@
                     <div class='col-lg-3 col-md-3 logo-links' style="vertical-align:middle;">
                         <ul>
                             <li class='pull-right' style="margin-right:66px;">
-                                <a href="#">Dine</a>
+                                <a href="<?php the_field("dine_home_page","options") ?>">Dine</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <a href="<?php echo site_url(); ?>">
-                            <img id="logo" src="<?php the_field("logo","options"); ?>" />
+                            <img id="logo" src="<?php if(the_field("header_selection") != "2") the_field("logo","options"); else the_field("logo2","options"); ?>" />
                         </a>
                     </div>
                     <div class='col-lg-3 col-md-3 logo-links' style="vertical-align:middle;">
                         <ul>
                             <li class="pull-left" >
-                                <a href="#">Stay</a>
+                                <a href="<?php the_field("stay_home_page","options") ?>">Stay</a>
                             </li>
                         </ul>
                     </div>
@@ -53,20 +53,20 @@
                 <div class='row hidden-lg hidden-md'>
                     <div class="col-sm-12 col-xs-12"  style="margin-bottom:10px;">
                         <a href="<?php echo site_url(); ?>">
-                            <img id="logo" src="<?php the_field("logo","options"); ?>" />
+                            <img id="logo" src="<?php if(the_field("header_selection") != "2") the_field("logo","options"); else the_field("logo2","options"); ?>" />
                         </a>
                     </div>
                     <div class='col-sm-6 col-xs-6 logo-links'>
                         <ul>
                             <li class="pull-left">
-                                <a href="#">Dine</a>
+                                <a href="<?php the_field("dine_home_page","options") ?>">Dine</a>
                             </li>
                         </ul>
                     </div>
                     <div class='col-sm-6 col-xs-6 logo-links'>
                         <ul>
                             <li class="pull-right" style="margin-right:76px;">
-                                <a href="#">Stay</a>
+                                <a href="<?php the_field("stay_home_page","options") ?>">Stay</a>
                             </li>
                         </ul>
                     </div>
@@ -75,25 +75,27 @@
         </div>
         <?php 
         
-        if(!is_page_template('splash-template.php')) { ?>
+        if(!is_page_template('splash-template.php')) { 
+            $menu_name = 'header-menu';
+            if(the_field("header_selection") == "2") $menu_name = 'header-menu-2';
+            
+        ?>
         <div class="menu-container">
             <div class="container">
                 <div class="row hidden-sm hidden-xs">
-                    <!-- menu in large and medium view - hidden in small and extra small view -->
                     <div class="col-md-12">
-                        <?wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => '' ) );?>
+                        <?wp_nav_menu( array( 'theme_location' => $menu_name, 'container_class' => '' ) );?>
                     </div>
                 </div>
                 <div class='row hidden-lg hidden-md'>
-                                        <!-- menu in small and extra small view - hidden in large and view view -->
                     <div class="col-sm-12 col-xs-12 hidden-lg hidden-md text-center">
                         <div class="btn-group">
                             <button type="button" class="btn btn-lg dropdown-toggle myNavButton" data-toggle="dropdown">
-                                <a href="#" class='rolling-pin'></a><!-- <i class="fa fa-cog fa-2x"></i> -->
+                                <a href="#" class='rolling-pin'></a>
                             </button>
                             <ul class="dropdown-menu" role="menu">
                             <?
-                            $menu_name = 'header-menu'; // Get the nav menu based on $menu_name (same as 'theme_location' or 'menu' arg to wp_nav_menu)
+                            
     
                             if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
                                 $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
