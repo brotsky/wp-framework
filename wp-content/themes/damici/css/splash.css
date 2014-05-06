@@ -10,3 +10,9 @@ footer {
     bottom: 50%;
     width: 100%;
 }
+
+page-template-splash-template-php .wrapper {
+    .wrapper {
+    	margin: 0 auto -40px;
+    }
+}

@@ -108,8 +108,16 @@ textarea {
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: 'Lato';
+    height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -286px; /* the bottom margin is the negative value of the footer's height */
 }
 
 a {
