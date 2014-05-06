@@ -83,7 +83,7 @@
                 <div class='row hidden-lg hidden-md'>
                                         <!-- menu in small and extra small view - hidden in large and view view -->
                     <div class="col-sm-12 col-xs-12 hidden-lg hidden-md text-center">
-                        <div class="btn-group">
+                        <div class="btn-group" >
                             <button type="button" class="btn btn-lg dropdown-toggle myNavButton" data-toggle="dropdown">
                                 <a href="#" class='rolling-pin'></a><!-- <i class="fa fa-cog fa-2x"></i> -->
                             </button>
