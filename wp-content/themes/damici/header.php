@@ -72,6 +72,9 @@
                 </div>
             </div>
         </div>
+        <?php 
+        
+        if(!is_page_template('splash-template.php')) { ?>
         <div class="menu-container">
             <div class="container">
                 <div class="row hidden-sm hidden-xs">
@@ -105,5 +108,5 @@
                 </div>
             </div>
         </div>
-        
+        <?php } ?>
     </header>

@@ -7,6 +7,7 @@ if( function_exists('acf_set_options_page_menu') ){
 
 get_template_part( 'includes/scripts' );
 get_template_part( 'includes/navigation' );
+get_template_part( 'includes/shortcodes' );
 get_template_part( 'includes/news' );
 get_template_part( 'includes/modules/main' );
 
@@ -61,6 +62,26 @@ function get_social_links() {
         <?php } ?>
     </ul>
     <?php }
+}
+
+function get_content_section() {
+    ?>
+    
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php if (have_posts())
+                        while (have_posts()) {
+                            the_post();
+                            the_content(); 
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php
 }
 
 if(function_exists("register_field_group"))
