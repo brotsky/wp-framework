@@ -81,10 +81,15 @@ header .logo-links ul {
     margin-top:36px;
 }
 
+header .logo-links ul li a {
+    line-height: 2.5;
+    padding-bottom: 25px;
+}
+
 header .logo-links ul li a:hover {
     background-image:url(images/logo-links-underline-red.png);
     background-repeat:no-repeat;
-    background-position:100% 115%;
+    background-position: 100% 80%;
 }
 
 header .menu-container, header .logo-links a {
@@ -109,6 +114,7 @@ header .menu-container ul li, header .menu-container ul li:hover, header .logo-l
     color: #000;
     font-weight: normal;
 	width: 20%;
+	text-transform: lowercase;
     
 }
 
@@ -188,3 +194,15 @@ only screen and (                min-resolution: 2dppx) {
     }
 
 }
+
+@media (max-width: 991px)
+ {
+    footer .text-right, footer .text-left {text-align:center;}
+    footer ul {
+        padding: 0;
+    }
+    footer ul li {
+        margin: 10px 20px 0
+    }
+    
+ } 

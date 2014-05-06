@@ -1,0 +1,12 @@
+footer {
+    background: #ba2f28;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.top-header {
+    position: fixed;
+    bottom: 50%;
+    width: 100%;
+}
