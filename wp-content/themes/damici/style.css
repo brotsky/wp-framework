@@ -47,6 +47,10 @@ body {
 	margin: 0 auto -286px;
 }
 
+.spacer {
+    height: 286px;
+}
+
 header .top-header {
     height: auto;
 }
@@ -107,7 +111,7 @@ header .menu-container ul, header .logo-links ul{
     list-style-type: none;
 }
 
-header .menu-container ul li, header .menu-container ul li:hover, header .logo-links ul li, header .logo-links ul li:hover {
+header .menu-container ul li, header .menu-container ul li:hover, header .logo-links ul li, header .logo-links ul li:hover, header .menu-container ul li.current-menu-item {
     border: 0;
     padding: 0;
     margin: 0;
@@ -202,6 +206,9 @@ only screen and (                min-resolution: 2dppx) {
 @media (max-width: 1200px) {
     .wrapper {
     	margin: 0 auto -247px;
+    }
+    .spacer {
+        height: 247px;
     }
 }
 @media (max-width: 991px)

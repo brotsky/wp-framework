@@ -8,7 +8,8 @@ function restaurant_menu_item_shortcode( $atts ) {
     extract( shortcode_atts( array(
 		'style' => 'default',
 		'title' => '',
-		'description' => ''
+		'description' => '',
+		'price' => ''
 	), $atts ) );
     return "<div class='restaurant-menu-item style-$stlye'>
                 <div class='title'>$title</div>
