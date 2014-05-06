@@ -43,6 +43,10 @@ body {
     background: url(images/white_wall_hash.png);
 }
 
+.wrapper {
+	margin: 0 auto -286px;
+}
+
 header .top-header {
     height: auto;
 }
@@ -194,7 +198,11 @@ only screen and (                min-resolution: 2dppx) {
     }
 
 }
-
+@media (max-width: 1200px) {
+    .wrapper {
+    	margin: 0 auto -247px;
+    }
+}
 @media (max-width: 991px)
  {
     footer .text-right, footer .text-left {text-align:center;}

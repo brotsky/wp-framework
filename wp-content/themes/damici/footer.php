@@ -1,4 +1,4 @@
-
+    </div>
 	<footer>
 	    <?php if(!is_page_template('splash-template.php')) { ?>
 	    <img class="diagonal-red" src="<?php echo get_stylesheet_directory_uri() ?>/images/diagonal-red.png" alt="" />
