@@ -38,6 +38,7 @@ function restaurant_menu_shortcode( $atts ) {
 	?>
 	<div id="restaurant-menu-<?php echo $id; ?>" class="restaurant-menu<?php if($class != "") { echo " " . $class; } ?>">
 	    <h3><?=get_the_title($id); ?></h3>
+	    <ul>
 	    <?php foreach($menu_items as $key => $item) {
     	    $style = $item['class'];
     	    if($style == "")
@@ -46,12 +47,17 @@ function restaurant_menu_shortcode( $atts ) {
             $subtitle = $item['subtitle'];
             $price = $item['price'];
 	    ?>
-        <div id="restaurant-menu-item-<?=$key ?>" class="restaurant-menu-item style-<?=$style ?>">
-            <div class="title"><?=$title ?></div>
-            <div class="description"><?=$subtitle ?></div>
-            <div class="price"><?=$price ?></div>
-        </div>
+            <li id="restaurant-menu-item-<?=$key ?>" class="restaurant-menu-item style-<?=$style ?>">
+                <div>
+                    <span class="title"><?=$title ?></span>
+                    <span class="price"><?=$price ?></span>
+                </div>
+                <div>
+                    <span class="subtile"><?=$subtitle ?></span>
+                </div>
+            </li>
         <?php } ?>
+	    </ul>
 	</div>
     <?php
         } else { ?>
