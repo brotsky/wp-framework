@@ -20,6 +20,24 @@
 	     url('fonts/TrendSansFour.svg#TrendSansFour') format('svg');
 }
 
+@font-face {
+	font-family: 'Lovelo_Black';
+	src: url('fonts/Lovelo_Black.eot?') format('eot'), 
+	     url('fonts/Lovelo_Black.otf')  format('opentype'),
+	     url('fonts/Lovelo_Black.woff') format('woff'), 
+	     url('fonts/Lovelo_Black.ttf')  format('truetype'),
+	     url('fonts/Lovelo_Black.svg#Lovelo_Black') format('svg');
+}
+
+@font-face {
+	font-family: 'ChunkFive-Roman';
+	src: url('fonts/ChunkFive-Roman.eot?') format('eot'), 
+	     url('fonts/ChunkFive-Roman.otf')  format('opentype'),
+	     url('fonts/ChunkFive-Roman.woff') format('woff'), 
+	     url('fonts/ChunkFive-Roman.ttf')  format('truetype'),
+	     url('fonts/ChunkFive-Roman.svg#ChunkFive-Roman') format('svg');
+}
+
 .myRow {
     display: table;
 }
@@ -30,21 +48,16 @@
     vertical-align: top;
 }
 
-@font-face {
-	font-family: 'Lovelo_Black';
-	src: url('fonts/Lovelo_Black.eot?') format('eot'), 
-	     url('fonts/Lovelo_Black.otf')  format('opentype'),
-	     url('fonts/Lovelo_Black.woff') format('woff'), 
-	     url('fonts/Lovelo_Black.ttf')  format('truetype'),
-	     url('fonts/Lovelo_Black.svg#Lovelo_Black') format('svg');
-}
-
-body {
+body, body .restaurant-menu ul span:first-child, body .restaurant-menu ul span + span {
     background: url(images/white_wall_hash.png);
 }
 
 .wrapper {
 	margin: 0 auto -286px;
+}
+
+.spacer {
+    height: 286px;
 }
 
 header .top-header {
@@ -107,7 +120,7 @@ header .menu-container ul, header .logo-links ul{
     list-style-type: none;
 }
 
-header .menu-container ul li, header .menu-container ul li:hover, header .logo-links ul li, header .logo-links ul li:hover {
+header .menu-container ul li, header .menu-container ul li:hover, header .logo-links ul li, header .logo-links ul li:hover, header .menu-container ul li.current-menu-item {
     border: 0;
     padding: 0;
     margin: 0;
@@ -178,6 +191,15 @@ footer #footer-pig {
     width: 80%;
 }
 
+.restaurant-menu .restaurant-menu-item .title, .restaurant-menu .restaurant-menu-item .price {
+    font-family: 'Lovelo_Black';
+}
+
+.restaurant-menu h3 {
+    font-family: 'ChunkFive-Roman';
+    color: #b82f27;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -186,7 +208,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
 
-    body {
+    body, body .restaurant-menu ul span:first-child, body .restaurant-menu ul span + span {
         background: url(images/white_wall_hash_@2X.png);
     }
     header .rolling-pin {
@@ -202,6 +224,9 @@ only screen and (                min-resolution: 2dppx) {
 @media (max-width: 1200px) {
     .wrapper {
     	margin: 0 auto -247px;
+    }
+    .spacer {
+        height: 247px;
     }
 }
 @media (max-width: 991px)

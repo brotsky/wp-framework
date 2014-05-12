@@ -1,0 +1,54 @@
+.restaurant-menu h3 {
+    text-align: center;
+}
+
+.restaurant-menu ul {
+    max-width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+}
+
+.restaurant-menu ul li {
+    list-style: none;
+}
+
+.restaurant-menu ul li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . ";
+}
+
+.restaurant-menu ul span:first-child {
+    padding-right: 0.33em;
+    background: white;
+}
+    
+.restaurant-menu ul span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white;
+}
+
+.restaurant-menu .restaurant-menu-item {
+    position: relative;
+}
+
+.restaurant-menu .restaurant-menu-item .price {
+    position: absolute;
+    right: 0;
+    top: 2px;
+}

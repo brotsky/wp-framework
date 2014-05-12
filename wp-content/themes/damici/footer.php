@@ -1,3 +1,4 @@
+        <div class="spacer"></div>
     </div>
 	<footer>
 	    <?php if(!is_page_template('splash-template.php')) { ?>
