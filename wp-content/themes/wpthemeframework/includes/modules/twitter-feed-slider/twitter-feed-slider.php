@@ -8,14 +8,27 @@ function twitter_feed_slider() {
     twitter_feed_slider_scripts();
     
     ?>
-    
     <section id="twitter-feed-slider">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
+            <div class="row" style="background:#303030;padding-top:50px;font-size:30px;padding-bottom:50px;color:white;">
+                <div class="col-md-12 text-center" >
+                <span class='fa fa-twitter fa-5x'></span>
+                </div>
+                <div class="col-md-12 text-center" >
+                #CrunchPunch
+                </div>
+                <div class="container" style="font-size:20px;font-style:italic;margin-top:30px;margin-bottom:50px;">
+                <div class='col-md-1'style='color:#44c4df;font-size:80px;'>&ldquo;
+                </div>
+                <div class='col-md-8'>
+                Blah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah Blah
+                </div>
+                <div class='col-md-3'>
+                <div class="tweet_bubble">
+                hello world
+                </div>
+                </div>
                 </div>
             </div>
-        </div>
     </section>
     <?php
 }
