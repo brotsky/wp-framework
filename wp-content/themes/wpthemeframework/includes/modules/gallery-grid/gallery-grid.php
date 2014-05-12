@@ -59,7 +59,7 @@ if(function_exists("register_field_group"))
 		'title' => 'Gallery Grid',
 		'fields' => array (
 			array (
-				'key' => 'field_53618df4f897a',
+				'key' => 'field_53711daff6664',
 				'label' => 'Show Title Area',
 				'name' => 'gallery_grid_show_title_area',
 				'type' => 'true_false',
@@ -67,7 +67,7 @@ if(function_exists("register_field_group"))
 				'default_value' => 1,
 			),
 			array (
-				'key' => 'field_53618e7be90f7',
+				'key' => 'field_53711ddaf6665',
 				'label' => 'Title',
 				'name' => 'gallery_grid_title',
 				'type' => 'text',
@@ -75,7 +75,7 @@ if(function_exists("register_field_group"))
 					'status' => 1,
 					'rules' => array (
 						array (
-							'field' => 'field_53618df4f897a',
+							'field' => 'field_53711daff6664',
 							'operator' => '==',
 							'value' => '1',
 						),
@@ -86,11 +86,11 @@ if(function_exists("register_field_group"))
 				'placeholder' => '',
 				'prepend' => '',
 				'append' => '',
-				'formatting' => 'html',
+				'formatting' => 'none',
 				'maxlength' => '',
 			),
 			array (
-				'key' => 'field_53618ea3e90f8',
+				'key' => 'field_53711de9f6666',
 				'label' => 'Caption',
 				'name' => 'gallery_grid_caption',
 				'type' => 'wysiwyg',
@@ -98,7 +98,7 @@ if(function_exists("register_field_group"))
 					'status' => 1,
 					'rules' => array (
 						array (
-							'field' => 'field_53618df4f897a',
+							'field' => 'field_53711daff6664',
 							'operator' => '==',
 							'value' => '1',
 						),
@@ -110,13 +110,13 @@ if(function_exists("register_field_group"))
 				'media_upload' => 'yes',
 			),
 			array (
-				'key' => 'field_5361862428aeb',
+				'key' => 'field_53711e23f6667',
 				'label' => 'Gallery Grid',
 				'name' => 'gallery_grid',
 				'type' => 'repeater',
 				'sub_fields' => array (
 					array (
-						'key' => 'field_5361863728aec',
+						'key' => 'field_53711e39f6668',
 						'label' => 'Image',
 						'name' => 'image',
 						'type' => 'image',
@@ -126,7 +126,7 @@ if(function_exists("register_field_group"))
 						'library' => 'all',
 					),
 					array (
-						'key' => 'field_5361864528aed',
+						'key' => 'field_53711e4ff6669',
 						'label' => 'Caption',
 						'name' => 'caption',
 						'type' => 'textarea',
@@ -142,6 +142,19 @@ if(function_exists("register_field_group"))
 				'row_limit' => '',
 				'layout' => 'table',
 				'button_label' => 'Add Image',
+			),
+			array (
+				'key' => 'field_53711fb81b272',
+				'label' => 'Boxed or Full Width',
+				'name' => 'gallery_grid_boxed_or_full_width',
+				'type' => 'select',
+				'choices' => array (
+					'Boxed' => 'Boxed',
+					'Full Width' => 'Full Width',
+				),
+				'default_value' => 'Full Width',
+				'allow_null' => 0,
+				'multiple' => 0,
 			),
 		),
 		'location' => array (
