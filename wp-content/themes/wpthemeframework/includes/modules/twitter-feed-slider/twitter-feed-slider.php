@@ -9,15 +9,15 @@ function twitter_feed_slider() {
     
     ?>
     <section id="twitter-feed-slider">
-            <div class="row" style="background:#303030;padding-top:50px;font-size:30px;padding-bottom:50px;color:white;">
+            <div class="row feed_wrapper">
                 <div class="col-md-12 text-center" >
-                <span class='fa fa-twitter fa-5x'></span>
+                <span class='fa fa-twitter fa-5x tweet_icon'></span>
                 </div>
                 <div class="col-md-12 text-center" >
                 #CrunchPunch
                 </div>
-                <div class="container" style="font-size:20px;font-style:italic;margin-top:30px;margin-bottom:50px;">
-                <div class='col-md-1'style='color:#44c4df;font-size:80px;'>&ldquo;
+                <div class="container feed_inner" >
+                <div class='col-md-1 feed_quote'>&ldquo;
                 </div>
                 <div class='col-md-8'>
                 Blah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah BlahBlah Blah Blah Blah
