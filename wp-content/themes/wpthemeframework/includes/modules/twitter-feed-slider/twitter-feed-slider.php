@@ -6,13 +6,14 @@ acf_add_options_sub_page( __('Twitter Feed Slider') );
 
 define('TWITTER_CONSUMER_KEY', get_field("twitter_api_key","options"));
 define('TWITTER_CONSUMER_SECRET', get_field("twitter_api_secret","options"));
+define('TWITTER_OAUTH_CALLBACK', TWITTER_FEED_SLIDER_DIR . '/twitteroauth/callback.php');
 
 //$screen_name = get_field("twitter_feed_slider_screen_name","options");
 //$count = get_field("twitter_feed_count","options");
 
 
 //we need the oauth token from Twitter
-
+/*
 function getConnectionWithAccessToken($oauth_token, $oauth_token_secret) {
   $connection = new TwitterOAuth(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET, $oauth_token, $oauth_token_secret);
   return $connection;
@@ -21,7 +22,7 @@ function getConnectionWithAccessToken($oauth_token, $oauth_token_secret) {
 $connection = getConnectionWithAccessToken("abcdefg", "hijklmnop");
 $content = $connection->get("statuses/home_timeline");
 
-
+*/
 //$json = file_get_contents("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=$screen_name&count=$count");
 
 
