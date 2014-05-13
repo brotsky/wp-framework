@@ -1,16 +1,24 @@
+#twitter-feed-slider .current_slide{
+
+}
+#twitter-feed-slider .off_screen{
+	display: none;
+}
 #twitter-feed-slider .feed_wrapper{
 	background:#303030;
 	padding-top:50px;
 	padding-bottom:50px;
+	color: #fff;
 }
 #twitter-feed-slider .tweet_icon {
 	font-size: 120px;
-	color: #fff;
+}
+#twitter-feed-slider .tweet_name{
+	font-size: 25px;
 }
 #twitter-feed-slider .feed_inner{
 	font-style:italic;
 	margin-top:30px;
-	color: #fff;
  }
 #twitter-feed-slider .feed_quote{
 	color:#44c4df;
