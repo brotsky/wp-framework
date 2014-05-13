@@ -24,15 +24,21 @@
 	color:#44c4df;
 	font-size: 60px;
 	top: -10px;
+	text-align: right;
+}
+#twitter-feed-slider .feed_text{
+	font-size: 20px;
 }
 
 
 #twitter-feed-slider .tweet_bubble{
-   width: 120px;
-   margin-right: auto;
-   margin-left: auto;
-   min-height: 40px;
-   padding: 5px;
+   min-width: 55px;
+   min-height: 55px;
+   display: inline-block;
+   padding-right: 20px;
+   padding-left: 20px;
+   padding-bottom: 10px;
+   padding-top: 5px;
    background: #22c3f1;
    position: relative;
    text-align: center;
@@ -46,4 +52,10 @@
 	height: 0;
 	border-top: 15px solid #22c3f1;
 	border-left: 15px solid transparent;
+}
+#twitter-feed-slider .tweet_bubble_name{
+	font-size: 20px;
+}
+#twitter-feed-slider .tweet_bubble_screen_name{
+	font-size: 10px;
 }

@@ -138,17 +138,22 @@ function twitter_feed_slider() {
                 </div>
                 <? foreach ($twitter_feed as $key => $value) {?>
                 <div class="container feed_inner <? if ($key==0) echo 'current_slide'; else echo 'off_screen';?>" data-slide-id='<?=$key?>'>
-                <div class='col-md-1 feed_quote'>&ldquo;
-                </div>
-                <div class='col-md-8'>
-                <?=$value['text']?>
-                </div>
-                <div class='col-md-3'>
-                <div class="tweet_bubble">
-                <?=$value['user']['name']?>
-				<?=$value['user']['screen_name']?>
-                </div>
-                </div>
+	                <div class='col-md-1 feed_quote'>&ldquo;
+	                </div>
+	                <div class='col-md-8 feed_text'>
+	                <?=$value['text']?>
+	                </div>
+	                <div class='col-md-3'>
+	                <div class="tweet_bubble">
+	                <span class='tweet_bubble_name'>
+	                	<?=$value['user']['name']?>
+	                </span>
+	                </br>
+	                <span class='tweet_bubble_screen_name'>
+					@<?=$value['user']['screen_name']?>
+	                </span>
+            		</div>
+            		</div>
             	</div>
             	<?}?>
            	</div>
