@@ -3,21 +3,23 @@
 	padding-top:50px;
 	padding-bottom:50px;
 }
-#twitter_feed_slider .tweet_icon{
-	font-size: 80px;
+#twitter-feed-slider .tweet_icon {
+	font-size: 120px;
 	color: #fff;
 }
-#twitter_feed_slider .feed_inner{
+#twitter-feed-slider .feed_inner{
 	font-style:italic;
 	margin-top:30px;
+	color: #fff;
  }
-#twitter_feed_slider .feed_quote{
+#twitter-feed-slider .feed_quote{
 	color:#44c4df;
-	font-size:80px;
+	font-size: 60px;
+	top: -10px;
 }
 
 
-#twitter_feed_slider .tweet_bubble{
+#twitter-feed-slider .tweet_bubble{
    width: 120px;
    margin-right: auto;
    margin-left: auto;
@@ -27,7 +29,7 @@
    position: relative;
    text-align: center;
 }
-#twitter_feed_slider .tweet_bubble:before {
+#twitter-feed-slider .tweet_bubble:before {
 	content:"";
 	position: absolute;
 	right: 100%;

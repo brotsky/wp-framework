@@ -23,7 +23,7 @@ function twitter_feed_slider() {
     ?>
     <section id="twitter-feed-slider">
             <div class="row feed_wrapper">
-                <div class="col-md-12 text-center" >
+                <div class="col-md-12 text-center " >
                 <span class='fa fa-twitter fa-5x tweet_icon'></span>
                 </div>
                 <div class="col-md-12 text-center" >
