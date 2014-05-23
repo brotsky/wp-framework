@@ -125,7 +125,7 @@ function twitter_feed_slider() {
     twitter_feed_slider_scripts();
     $twitter_name="CrunchPunchShop";
     $twitter_feed = return_tweet();
-    var_dump($twitter_feed);
+    // var_dump($twitter_feed);
     ?>
 
     <section id="twitter-feed-slider" data-slide-count='<?=count($twitter_feed)?>' >
@@ -141,7 +141,7 @@ function twitter_feed_slider() {
 	                <div class='col-md-1 feed_quote'>&ldquo;
 	                </div>
 	                <div class='col-md-8 feed_text'>
-	                <?if(isset($value['text']) echo $value['text']?>
+	                <?=$value['text']?>
 	                </div>
 	                <div class='col-md-3'>
 	                <div class="tweet_bubble">

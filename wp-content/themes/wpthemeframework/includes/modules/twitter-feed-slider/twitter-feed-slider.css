@@ -1,9 +1,8 @@
 #twitter-feed-slider .current_slide{
-	
+
 }
 #twitter-feed-slider .off_screen{
 	display: none;
-	left:150%;
 }
 #twitter-feed-slider .feed_wrapper{
 	background:#303030;

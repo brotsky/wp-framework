@@ -9,5 +9,6 @@ get_header(); ?>
 
 <?php gallery_grid(); ?>
 <?php twitter_feed_slider(); ?>
+<?php google_map_contact();?>
 
 <?php get_footer(); ?>
