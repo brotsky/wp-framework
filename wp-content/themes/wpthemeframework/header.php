@@ -87,8 +87,6 @@
             </div>
         </div>
     </header>
-    <? twitter_feed_slider();?>
-
     <?php if(!is_page_template('home-template.php')) { ?>
     <div class="page-title">
         <div class="container">
